@@ -45,23 +45,6 @@ document.querySelector('.copy-button').addEventListener('click', function () {
 
 
 
-document.querySelector('.modal-content .copy-button').addEventListener('click', function () {
-  var pixKey = '92991053636'; // Substitua pelo valor da sua chave Pix
-  var textArea = document.createElement('textarea');
-  textArea.value = pixKey;
-  document.body.appendChild(textArea);
-  textArea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textArea);
-
-  var copyMessage = document.getElementById('copy-message');
-  copyMessage.classList.remove('hidden');
-
-  setTimeout(function () {
-    copyMessage.classList.add('hidden');
-  }, 2000);
-});
-
 
 
 // Obter o modal
