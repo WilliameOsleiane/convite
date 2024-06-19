@@ -198,6 +198,7 @@ footer p {
   }
 
 .links a{
+display: block;
 padding: 5px;
 
   
